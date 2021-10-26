@@ -1,0 +1,162 @@
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5369e5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #001871;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 0.8vw;
+}
+
+main {
+  max-width: 95vw;
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.slide-container {
+  margin: 4vh 2.5vw 0vh 2.5vw;
+}
+
+.section {
+  min-width: 95vw;
+  flex: 1 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-column-left {
+  width: 49.55vw;
+  height: 90vh;
+  display: inline;
+  float: left;
+}
+
+.slide-column-right {
+  width: 44.55vw;
+  height: 90vh;
+  display: inline;
+  float: right;
+}
+
+/* navigation buttons styling */
+.navigation-container {
+  margin-left: 45vw;
+  width: fit-content;
+}
+
+.navigation-container p {
+  display: inline;
+  font-size: 1vw;
+}
+
+.navigation-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 16px;
+  margin: 0vh 0vw 0vh 0vw;
+  font-size: 30px;
+  font-weight: 400;
+  color: #a3cb8f;
+  border: none;
+}
+
+.navigation-button:hover {
+  background-color: #ffffff;
+  border-radius: 40%;
+  color: #b3816e;
+}
+.navigation-count {
+  margin: 0vh 0vw 0vh 0vw;
+  color: #a3cb8f;
+}
+
+/* Pop up styling */
+.overlay {
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* background-color: rgb(0,0,0); */
+  background-color: #a3cb8f;
+  overflow-y: hidden;
+  transition: 0.5s;
+  margin: 61vh 0vw 0vh 26vw;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay p {
+  padding: 5vh;
+  text-decoration: none;
+  font-size: 3vh;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0.5vh;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* Help button styling */
+.help-button {
+  text-decoration: none;
+  cursor: pointer;
+  color: #a3cb8f;
+  font-weight: bold;
+  font-size: 1vw;
+}
+
+.help-button:hover {
+  color: #b3816e;
+}
+.help-button:hover {
+  color: #b3816e;
+  font-size: 1.2vw;
+}

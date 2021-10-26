@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- style sheets -->
+    <link href="./src/css/index.css" rel="stylesheet">
+    
+    <!-- scripts -->
+    <script rel src="./src/js/index.js"></script>
+    
+    <!-- favicon icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        html {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style> 
+    
+    <!-- title -->
+    <title>Helion</title>
+</head>
+<body>
+
+    <!-- Pop up -->
+    <div id="instructions" class="overlay" style="height: 25vh;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeHelp()">&times;</a>
+        <div class="overlay-content">
+            <p>To navigate through the slides please use the arrows provided or just scroll down</p>
+        </div>
+    </div> 
+
+    <div class="slide-container">
+        <main class='scroll-container' id="scroll-container">  
+
+                <!-- slide 1 -->
+                <article class='section' id='1' style="background-color: #DED2AA;"> 
+                    <div class="slide-column-left">
+                        
+                    </div>
+                    <div class="slide-column-right">
+                        
+                    </div>
+                </article>
+
+                <!-- slide 2 -->
+                <article class='section' id='2' style="background-color: #C7A26B"> 
+                    <div class="slide-column-left">
+                        
+                    </div>
+                    <div class="slide-column-right">
+                        
+                    </div>
+                </article>
+
+                <!-- slide 3 -->
+                <article class='section' id='3' style="background-color: #B3816E;"> 
+                    <div class="slide-column-left">
+                        
+                    </div>
+                    <div class="slide-column-right">
+                        
+                    </div>
+                </article>
+
+                <!-- slide 4 -->
+                <article class='section' id='4' style="background-color: #A3CB8F"> 
+                    <div class="slide-column-left">
+                        
+                    </div>
+                    <div class="slide-column-right">
+                        
+                    </div>
+                </article>
+            </main>
+
+            <div class="navigation-container">
+                <a href="#" onclick="slideDown()" class="navigation-button" id="button-down">&#8249;</a>
+                <p id="navigation-count" class="navigation-count">1 / 4</p>
+                <a href="#" onclick="slideUp()" class="navigation-button" id="button-up">&#8250;</a>
+                <a onclick="openHelp()" class="help-button" id="help-button">?</a>
+            </div>
+        </div>
+    </body>
+    </html>
